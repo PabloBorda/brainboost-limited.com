@@ -1,0 +1,139 @@
+[21/Nov/2022:00:18:14] ENGINE Listening for SIGTERM.
+[21/Nov/2022:00:18:14] ENGINE Listening for SIGHUP.
+[21/Nov/2022:00:18:14] ENGINE Listening for SIGUSR1.
+[21/Nov/2022:00:18:14] ENGINE Bus STARTING
+[21/Nov/2022:00:18:14] ENGINE Started monitor thread 'Autoreloader'.
+[21/Nov/2022:00:18:14] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7fe4b0818cd0>>
+Traceback (most recent call last):
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/_cpserver.py", line 179, in start
+    self.httpserver, self.bind_addr = self.httpserver_from_self()
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/_cpserver.py", line 170, in httpserver_from_self
+    httpserver = _cpwsgi_server.CPWSGIServer(self)
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/_cpwsgi_server.py", line 99, in __init__
+    self.ssl_adapter = adapter_class(
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cheroot/ssl/builtin.py", line 226, in __init__
+    self.context.load_cert_chain(certificate, private_key)
+FileNotFoundError: [Errno 2] No such file or directory
+
+[21/Nov/2022:00:18:14] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: FileNotFoundError(2, 'No such file or directory')
+
+[21/Nov/2022:00:18:14] ENGINE Bus STOPPING
+[21/Nov/2022:00:18:14] ENGINE HTTP Server None already shut down
+[21/Nov/2022:00:18:14] ENGINE Stopped thread 'Autoreloader'.
+[21/Nov/2022:00:18:14] ENGINE Bus STOPPED
+[21/Nov/2022:00:18:14] ENGINE Bus EXITING
+[21/Nov/2022:00:18:14] ENGINE Bus EXITED
+[21/Nov/2022:00:18:36] ENGINE Listening for SIGTERM.
+[21/Nov/2022:00:18:36] ENGINE Listening for SIGHUP.
+[21/Nov/2022:00:18:36] ENGINE Listening for SIGUSR1.
+[21/Nov/2022:00:18:36] ENGINE Bus STARTING
+[21/Nov/2022:00:18:36] ENGINE Started monitor thread 'Autoreloader'.
+[21/Nov/2022:00:18:36] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7f96a0810ca0>>
+Traceback (most recent call last):
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/_cpserver.py", line 179, in start
+    self.httpserver, self.bind_addr = self.httpserver_from_self()
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/_cpserver.py", line 170, in httpserver_from_self
+    httpserver = _cpwsgi_server.CPWSGIServer(self)
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/_cpwsgi_server.py", line 99, in __init__
+    self.ssl_adapter = adapter_class(
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cheroot/ssl/builtin.py", line 226, in __init__
+    self.context.load_cert_chain(certificate, private_key)
+FileNotFoundError: [Errno 2] No such file or directory
+
+[21/Nov/2022:00:18:36] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: FileNotFoundError(2, 'No such file or directory')
+
+[21/Nov/2022:00:18:36] ENGINE Bus STOPPING
+[21/Nov/2022:00:18:36] ENGINE HTTP Server None already shut down
+[21/Nov/2022:00:18:36] ENGINE Stopped thread 'Autoreloader'.
+[21/Nov/2022:00:18:36] ENGINE Bus STOPPED
+[21/Nov/2022:00:18:36] ENGINE Bus EXITING
+[21/Nov/2022:00:18:36] ENGINE Bus EXITED
+[21/Nov/2022:00:18:45] ENGINE Listening for SIGTERM.
+[21/Nov/2022:00:18:45] ENGINE Listening for SIGHUP.
+[21/Nov/2022:00:18:45] ENGINE Listening for SIGUSR1.
+[21/Nov/2022:00:18:45] ENGINE Bus STARTING
+[21/Nov/2022:00:18:45] ENGINE Started monitor thread 'Autoreloader'.
+[21/Nov/2022:00:18:45] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7f81188e8cd0>>
+Traceback (most recent call last):
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/_cpserver.py", line 179, in start
+    self.httpserver, self.bind_addr = self.httpserver_from_self()
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/_cpserver.py", line 170, in httpserver_from_self
+    httpserver = _cpwsgi_server.CPWSGIServer(self)
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/_cpwsgi_server.py", line 99, in __init__
+    self.ssl_adapter = adapter_class(
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cheroot/ssl/builtin.py", line 226, in __init__
+    self.context.load_cert_chain(certificate, private_key)
+FileNotFoundError: [Errno 2] No such file or directory
+
+[21/Nov/2022:00:18:45] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: FileNotFoundError(2, 'No such file or directory')
+
+[21/Nov/2022:00:18:45] ENGINE Bus STOPPING
+[21/Nov/2022:00:18:45] ENGINE HTTP Server None already shut down
+[21/Nov/2022:00:18:45] ENGINE Stopped thread 'Autoreloader'.
+[21/Nov/2022:00:18:45] ENGINE Bus STOPPED
+[21/Nov/2022:00:18:45] ENGINE Bus EXITING
+[21/Nov/2022:00:18:45] ENGINE Bus EXITED
+[21/Nov/2022:02:13:33] ENGINE Listening for SIGTERM.
+[21/Nov/2022:02:13:33] ENGINE Listening for SIGHUP.
+[21/Nov/2022:02:13:33] ENGINE Listening for SIGUSR1.
+[21/Nov/2022:02:13:33] ENGINE Bus STARTING
+[21/Nov/2022:02:13:33] ENGINE Started monitor thread 'Autoreloader'.
+[21/Nov/2022:02:13:33] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7fabf0a38cd0>>
+Traceback (most recent call last):
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/_cpserver.py", line 179, in start
+    self.httpserver, self.bind_addr = self.httpserver_from_self()
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/_cpserver.py", line 170, in httpserver_from_self
+    httpserver = _cpwsgi_server.CPWSGIServer(self)
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/_cpwsgi_server.py", line 99, in __init__
+    self.ssl_adapter = adapter_class(
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cheroot/ssl/builtin.py", line 226, in __init__
+    self.context.load_cert_chain(certificate, private_key)
+FileNotFoundError: [Errno 2] No such file or directory
+
+[21/Nov/2022:02:13:33] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/Users/pablotomasborda/Library/Python/3.9/lib/python/site-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: FileNotFoundError(2, 'No such file or directory')
+
+[21/Nov/2022:02:13:33] ENGINE Bus STOPPING
+[21/Nov/2022:02:13:33] ENGINE HTTP Server None already shut down
+[21/Nov/2022:02:13:33] ENGINE Stopped thread 'Autoreloader'.
+[21/Nov/2022:02:13:33] ENGINE Bus STOPPED
+[21/Nov/2022:02:13:33] ENGINE Bus EXITING
+[21/Nov/2022:02:13:33] ENGINE Bus EXITED
+[21/Nov/2022:02:14:14] ENGINE Listening for SIGTERM.
+[21/Nov/2022:02:14:14] ENGINE Listening for SIGHUP.
+[21/Nov/2022:02:14:14] ENGINE Listening for SIGUSR1.
+[21/Nov/2022:02:14:14] ENGINE Bus STARTING
+[21/Nov/2022:02:14:14] ENGINE Started monitor thread 'Autoreloader'.
+[21/Nov/2022:02:14:14] ENGINE Serving on http://0.0.0.0:443
+[21/Nov/2022:02:14:14] ENGINE Bus STARTED

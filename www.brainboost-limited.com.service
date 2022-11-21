@@ -1,0 +1,11 @@
+[Unit]
+Description=brainboost-limited.com Website
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/www.brainboost-limited.com
+ExecStart=/usr/bin/python3 server.py
+
+[Install]
+WantedBy=multi-user.target
