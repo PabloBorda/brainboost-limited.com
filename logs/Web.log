@@ -137,3 +137,667 @@ cherrypy.process.wspbus.ChannelFailures: FileNotFoundError(2, 'No such file or d
 [21/Nov/2022:02:14:14] ENGINE Started monitor thread 'Autoreloader'.
 [21/Nov/2022:02:14:14] ENGINE Serving on http://0.0.0.0:443
 [21/Nov/2022:02:14:14] ENGINE Bus STARTED
+[30/Nov/2022:12:12:54] ENGINE Listening for SIGTERM.
+[30/Nov/2022:12:12:54] ENGINE Listening for SIGHUP.
+[30/Nov/2022:12:12:54] ENGINE Listening for SIGUSR1.
+[30/Nov/2022:12:12:54] ENGINE Bus STARTING
+[30/Nov/2022:12:12:54] ENGINE Started monitor thread 'Autoreloader'.
+[30/Nov/2022:12:12:54] ENGINE Serving on http://0.0.0.0:443
+[30/Nov/2022:12:12:54] ENGINE Bus STARTED
+[30/Nov/2022:12:24:15] ENGINE Restarting because /root/www.brainboost-limited.com/server.py changed.
+[30/Nov/2022:12:24:15] ENGINE Stopped thread 'Autoreloader'.
+[30/Nov/2022:12:24:15] ENGINE Bus STOPPING
+[30/Nov/2022:12:24:16] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 443)) shut down
+[30/Nov/2022:12:24:16] ENGINE Bus STOPPED
+[30/Nov/2022:12:24:16] ENGINE Bus EXITING
+[30/Nov/2022:12:24:16] ENGINE Bus EXITED
+[30/Nov/2022:12:24:16] ENGINE Waiting for child threads to terminate...
+[30/Nov/2022:12:24:16] ENGINE Re-spawning python3 server.py
+[30/Nov/2022:12:24:18] ENGINE Listening for SIGTERM.
+[30/Nov/2022:12:24:18] ENGINE Listening for SIGHUP.
+[30/Nov/2022:12:24:18] ENGINE Listening for SIGUSR1.
+[30/Nov/2022:12:24:18] ENGINE Bus STARTING
+[30/Nov/2022:12:24:18] ENGINE Started monitor thread 'Autoreloader'.
+[30/Nov/2022:12:24:18] ENGINE Serving on http://0.0.0.0:443
+[30/Nov/2022:12:24:18] ENGINE Bus STARTED
+[30/Nov/2022:12:25:40] ENGINE Restarting because cherrypy.cfg changed.
+[30/Nov/2022:12:25:40] ENGINE Stopped thread 'Autoreloader'.
+[30/Nov/2022:12:25:40] ENGINE Bus STOPPING
+[30/Nov/2022:12:25:41] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 443)) shut down
+[30/Nov/2022:12:25:41] ENGINE Bus STOPPED
+[30/Nov/2022:12:25:41] ENGINE Bus EXITING
+[30/Nov/2022:12:25:41] ENGINE Bus EXITED
+[30/Nov/2022:12:25:41] ENGINE Waiting for child threads to terminate...
+[30/Nov/2022:12:25:41] ENGINE Re-spawning python3 server.py
+[30/Nov/2022:12:29:49] ENGINE Listening for SIGTERM.
+[30/Nov/2022:12:29:49] ENGINE Listening for SIGHUP.
+[30/Nov/2022:12:29:49] ENGINE Listening for SIGUSR1.
+[30/Nov/2022:12:29:49] ENGINE Bus STARTING
+[30/Nov/2022:12:29:49] ENGINE Started monitor thread 'Autoreloader'.
+[30/Nov/2022:12:29:49] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7fa9659eecb0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpserver.py", line 179, in start
+    self.httpserver, self.bind_addr = self.httpserver_from_self()
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpserver.py", line 170, in httpserver_from_self
+    httpserver = _cpwsgi_server.CPWSGIServer(self)
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpwsgi_server.py", line 99, in __init__
+    self.ssl_adapter = adapter_class(
+  File "/usr/local/lib/python3.10/dist-packages/cheroot/ssl/builtin.py", line 219, in __init__
+    self.context.load_cert_chain(certificate, private_key)
+FileNotFoundError: [Errno 2] No such file or directory
+
+[30/Nov/2022:12:29:49] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: FileNotFoundError(2, 'No such file or directory')
+
+[30/Nov/2022:12:29:49] ENGINE Bus STOPPING
+[30/Nov/2022:12:29:49] ENGINE HTTP Server None already shut down
+[30/Nov/2022:12:29:49] ENGINE Stopped thread 'Autoreloader'.
+[30/Nov/2022:12:29:49] ENGINE Bus STOPPED
+[30/Nov/2022:12:29:49] ENGINE Bus EXITING
+[30/Nov/2022:12:29:49] ENGINE Bus EXITED
+[30/Nov/2022:12:30:10] ENGINE Listening for SIGTERM.
+[30/Nov/2022:12:30:10] ENGINE Listening for SIGHUP.
+[30/Nov/2022:12:30:10] ENGINE Listening for SIGUSR1.
+[30/Nov/2022:12:30:10] ENGINE Bus STARTING
+[30/Nov/2022:12:30:10] ENGINE Started monitor thread 'Autoreloader'.
+[30/Nov/2022:12:30:10] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7f372f1ab670>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpserver.py", line 179, in start
+    self.httpserver, self.bind_addr = self.httpserver_from_self()
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpserver.py", line 170, in httpserver_from_self
+    httpserver = _cpwsgi_server.CPWSGIServer(self)
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpwsgi_server.py", line 99, in __init__
+    self.ssl_adapter = adapter_class(
+  File "/usr/local/lib/python3.10/dist-packages/cheroot/ssl/builtin.py", line 219, in __init__
+    self.context.load_cert_chain(certificate, private_key)
+FileNotFoundError: [Errno 2] No such file or directory
+
+[30/Nov/2022:12:30:10] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: FileNotFoundError(2, 'No such file or directory')
+
+[30/Nov/2022:12:30:10] ENGINE Bus STOPPING
+[30/Nov/2022:12:30:10] ENGINE HTTP Server None already shut down
+[30/Nov/2022:12:30:10] ENGINE Stopped thread 'Autoreloader'.
+[30/Nov/2022:12:30:10] ENGINE Bus STOPPED
+[30/Nov/2022:12:30:10] ENGINE Bus EXITING
+[30/Nov/2022:12:30:10] ENGINE Bus EXITED
+[30/Nov/2022:16:45:33] ENGINE Listening for SIGTERM.
+[30/Nov/2022:16:45:33] ENGINE Listening for SIGHUP.
+[30/Nov/2022:16:45:33] ENGINE Listening for SIGUSR1.
+[30/Nov/2022:16:45:33] ENGINE Bus STARTING
+[30/Nov/2022:16:45:33] ENGINE Started monitor thread 'Autoreloader'.
+[30/Nov/2022:16:45:33] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7fbac83b6e00>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpserver.py", line 179, in start
+    self.httpserver, self.bind_addr = self.httpserver_from_self()
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpserver.py", line 170, in httpserver_from_self
+    httpserver = _cpwsgi_server.CPWSGIServer(self)
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpwsgi_server.py", line 99, in __init__
+    self.ssl_adapter = adapter_class(
+  File "/usr/local/lib/python3.10/dist-packages/cheroot/ssl/builtin.py", line 219, in __init__
+    self.context.load_cert_chain(certificate, private_key)
+FileNotFoundError: [Errno 2] No such file or directory
+
+[30/Nov/2022:16:45:33] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: FileNotFoundError(2, 'No such file or directory')
+
+[30/Nov/2022:16:45:34] ENGINE Bus STOPPING
+[30/Nov/2022:16:45:34] ENGINE HTTP Server None already shut down
+[30/Nov/2022:16:45:34] ENGINE Stopped thread 'Autoreloader'.
+[30/Nov/2022:16:45:34] ENGINE Bus STOPPED
+[30/Nov/2022:16:45:34] ENGINE Bus EXITING
+[30/Nov/2022:16:45:34] ENGINE Bus EXITED
+[30/Nov/2022:16:46:29] ENGINE Listening for SIGTERM.
+[30/Nov/2022:16:46:29] ENGINE Listening for SIGHUP.
+[30/Nov/2022:16:46:29] ENGINE Listening for SIGUSR1.
+[30/Nov/2022:16:46:29] ENGINE Bus STARTING
+[30/Nov/2022:16:46:29] ENGINE Started monitor thread 'Autoreloader'.
+[30/Nov/2022:16:46:41] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7ff94691afe0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 122, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 70, in assert_free
+    info = socket.getaddrinfo(host, port, socket.AF_UNSPEC, socket.SOCK_STREAM)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+[30/Nov/2022:16:46:41] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: gaierror(-2, 'Name or service not known')
+
+[30/Nov/2022:16:46:41] ENGINE Bus STOPPING
+[30/Nov/2022:16:46:41] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('www.brainboost-limited.com', 443)) already shut down
+[30/Nov/2022:16:46:41] ENGINE Stopped thread 'Autoreloader'.
+[30/Nov/2022:16:46:41] ENGINE Bus STOPPED
+[30/Nov/2022:16:46:41] ENGINE Bus EXITING
+[30/Nov/2022:16:46:41] ENGINE Bus EXITED
+[30/Nov/2022:16:48:00] ENGINE Listening for SIGTERM.
+[30/Nov/2022:16:48:00] ENGINE Listening for SIGHUP.
+[30/Nov/2022:16:48:00] ENGINE Listening for SIGUSR1.
+[30/Nov/2022:16:48:00] ENGINE Bus STARTING
+[30/Nov/2022:16:48:00] ENGINE Started monitor thread 'Autoreloader'.
+[30/Nov/2022:16:48:03] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7f7d1e281d80>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 122, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 70, in assert_free
+    info = socket.getaddrinfo(host, port, socket.AF_UNSPEC, socket.SOCK_STREAM)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+[30/Nov/2022:16:48:03] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: gaierror(-2, 'Name or service not known')
+
+[30/Nov/2022:16:48:03] ENGINE Bus STOPPING
+[30/Nov/2022:16:48:03] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('www.brainboost-limited.com', 443)) already shut down
+[30/Nov/2022:16:48:03] ENGINE Stopped thread 'Autoreloader'.
+[30/Nov/2022:16:48:03] ENGINE Bus STOPPED
+[30/Nov/2022:16:48:03] ENGINE Bus EXITING
+[30/Nov/2022:16:48:03] ENGINE Bus EXITED
+[30/Nov/2022:22:35:16] ENGINE Listening for SIGTERM.
+[30/Nov/2022:22:35:16] ENGINE Listening for SIGHUP.
+[30/Nov/2022:22:35:16] ENGINE Listening for SIGUSR1.
+[30/Nov/2022:22:35:16] ENGINE Bus STARTING
+[30/Nov/2022:22:35:16] ENGINE Started monitor thread 'Autoreloader'.
+[30/Nov/2022:22:35:16] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7fcffb46eec0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 122, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 70, in assert_free
+    info = socket.getaddrinfo(host, port, socket.AF_UNSPEC, socket.SOCK_STREAM)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+[30/Nov/2022:22:35:16] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: gaierror(-2, 'Name or service not known')
+
+[30/Nov/2022:22:35:16] ENGINE Bus STOPPING
+[30/Nov/2022:22:35:16] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('www.brainboost-limited.com', 443)) already shut down
+[30/Nov/2022:22:35:16] ENGINE Stopped thread 'Autoreloader'.
+[30/Nov/2022:22:35:16] ENGINE Bus STOPPED
+[30/Nov/2022:22:35:16] ENGINE Bus EXITING
+[30/Nov/2022:22:35:16] ENGINE Bus EXITED
+[30/Nov/2022:23:27:49] ENGINE Listening for SIGTERM.
+[30/Nov/2022:23:27:49] ENGINE Listening for SIGHUP.
+[30/Nov/2022:23:27:49] ENGINE Listening for SIGUSR1.
+[30/Nov/2022:23:27:49] ENGINE Bus STARTING
+[30/Nov/2022:23:27:49] ENGINE Started monitor thread 'Autoreloader'.
+[30/Nov/2022:23:27:55] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7fc21f26a7d0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 122, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 71, in assert_free
+    list(itertools.starmap(self._connect, info))
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 87, in _connect
+    raise PortNotFree(tmpl.format(**locals()))
+portend.PortNotFree: Port 443 is in use on 142.93.3.74.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 126, in free
+    raise Timeout("Port {port} not free on {host}.".format(**locals()))
+portend.Timeout: Port 443 not free on www.subjectivetechnologies.com.
+
+[30/Nov/2022:23:27:55] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: Timeout('Port 443 not free on www.subjectivetechnologies.com.')
+
+[30/Nov/2022:23:27:55] ENGINE Bus STOPPING
+[30/Nov/2022:23:27:55] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('www.subjectivetechnologies.com', 443)) already shut down
+[30/Nov/2022:23:27:55] ENGINE Stopped thread 'Autoreloader'.
+[30/Nov/2022:23:27:55] ENGINE Bus STOPPED
+[30/Nov/2022:23:27:55] ENGINE Bus EXITING
+[30/Nov/2022:23:27:55] ENGINE Bus EXITED
+[30/Nov/2022:23:28:32] ENGINE Listening for SIGTERM.
+[30/Nov/2022:23:28:32] ENGINE Listening for SIGHUP.
+[30/Nov/2022:23:28:32] ENGINE Listening for SIGUSR1.
+[30/Nov/2022:23:28:32] ENGINE Bus STARTING
+[30/Nov/2022:23:28:32] ENGINE Started monitor thread 'Autoreloader'.
+[30/Nov/2022:23:28:42] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7f95d373aa10>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 122, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 70, in assert_free
+    info = socket.getaddrinfo(host, port, socket.AF_UNSPEC, socket.SOCK_STREAM)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+[30/Nov/2022:23:28:42] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: gaierror(-2, 'Name or service not known')
+
+[30/Nov/2022:23:28:42] ENGINE Bus STOPPING
+[30/Nov/2022:23:28:42] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('www.brainboost-limited.com', 443)) already shut down
+[30/Nov/2022:23:28:42] ENGINE Stopped thread 'Autoreloader'.
+[30/Nov/2022:23:28:42] ENGINE Bus STOPPED
+[30/Nov/2022:23:28:42] ENGINE Bus EXITING
+[30/Nov/2022:23:28:42] ENGINE Bus EXITED
+[30/Nov/2022:23:37:38] ENGINE Listening for SIGTERM.
+[30/Nov/2022:23:37:38] ENGINE Listening for SIGHUP.
+[30/Nov/2022:23:37:38] ENGINE Listening for SIGUSR1.
+[30/Nov/2022:23:37:38] ENGINE Bus STARTING
+[30/Nov/2022:23:37:38] ENGINE Started monitor thread 'Autoreloader'.
+[30/Nov/2022:23:37:38] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7fafdbaf5c90>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 122, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 70, in assert_free
+    info = socket.getaddrinfo(host, port, socket.AF_UNSPEC, socket.SOCK_STREAM)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+[30/Nov/2022:23:37:38] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: gaierror(-2, 'Name or service not known')
+
+[30/Nov/2022:23:37:38] ENGINE Bus STOPPING
+[30/Nov/2022:23:37:38] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('www.brainboost-limited.com', 443)) already shut down
+[30/Nov/2022:23:37:38] ENGINE Stopped thread 'Autoreloader'.
+[30/Nov/2022:23:37:38] ENGINE Bus STOPPED
+[30/Nov/2022:23:37:38] ENGINE Bus EXITING
+[30/Nov/2022:23:37:38] ENGINE Bus EXITED
+[01/Dec/2022:00:07:55] ENGINE Listening for SIGTERM.
+[01/Dec/2022:00:07:55] ENGINE Listening for SIGHUP.
+[01/Dec/2022:00:07:55] ENGINE Listening for SIGUSR1.
+[01/Dec/2022:00:07:55] ENGINE Bus STARTING
+[01/Dec/2022:00:07:55] ENGINE Started monitor thread 'Autoreloader'.
+[01/Dec/2022:00:07:55] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7f3c2b9e6da0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 122, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 70, in assert_free
+    info = socket.getaddrinfo(host, port, socket.AF_UNSPEC, socket.SOCK_STREAM)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+[01/Dec/2022:00:07:55] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: gaierror(-2, 'Name or service not known')
+
+[01/Dec/2022:00:07:55] ENGINE Bus STOPPING
+[01/Dec/2022:00:07:55] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('www.brainboost-limited.com', 443)) already shut down
+[01/Dec/2022:00:07:55] ENGINE Stopped thread 'Autoreloader'.
+[01/Dec/2022:00:07:55] ENGINE Bus STOPPED
+[01/Dec/2022:00:07:55] ENGINE Bus EXITING
+[01/Dec/2022:00:07:55] ENGINE Bus EXITED
+[01/Dec/2022:11:57:25] ENGINE Listening for SIGTERM.
+[01/Dec/2022:11:57:25] ENGINE Listening for SIGHUP.
+[01/Dec/2022:11:57:25] ENGINE Listening for SIGUSR1.
+[01/Dec/2022:11:57:25] ENGINE Bus STARTING
+[01/Dec/2022:11:57:25] ENGINE Started monitor thread 'Autoreloader'.
+[01/Dec/2022:11:57:29] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7fabc1fdb4c0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 122, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 70, in assert_free
+    info = socket.getaddrinfo(host, port, socket.AF_UNSPEC, socket.SOCK_STREAM)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+[01/Dec/2022:11:57:29] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: gaierror(-2, 'Name or service not known')
+
+[01/Dec/2022:11:57:29] ENGINE Bus STOPPING
+[01/Dec/2022:11:57:29] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('www.brainboost-limited.com', 443)) already shut down
+[01/Dec/2022:11:57:29] ENGINE Stopped thread 'Autoreloader'.
+[01/Dec/2022:11:57:29] ENGINE Bus STOPPED
+[01/Dec/2022:11:57:29] ENGINE Bus EXITING
+[01/Dec/2022:11:57:29] ENGINE Bus EXITED
+[01/Dec/2022:12:02:27] ENGINE Listening for SIGTERM.
+[01/Dec/2022:12:02:27] ENGINE Listening for SIGHUP.
+[01/Dec/2022:12:02:27] ENGINE Listening for SIGUSR1.
+[01/Dec/2022:12:02:27] ENGINE Bus STARTING
+[01/Dec/2022:12:02:27] ENGINE Started monitor thread 'Autoreloader'.
+[01/Dec/2022:12:02:27] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7f6e4af4a980>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 122, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 70, in assert_free
+    info = socket.getaddrinfo(host, port, socket.AF_UNSPEC, socket.SOCK_STREAM)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+[01/Dec/2022:12:02:27] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: gaierror(-2, 'Name or service not known')
+
+[01/Dec/2022:12:02:27] ENGINE Bus STOPPING
+[01/Dec/2022:12:02:27] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('www.brainboost-limited.com', 443)) already shut down
+[01/Dec/2022:12:02:27] ENGINE Stopped thread 'Autoreloader'.
+[01/Dec/2022:12:02:27] ENGINE Bus STOPPED
+[01/Dec/2022:12:02:27] ENGINE Bus EXITING
+[01/Dec/2022:12:02:27] ENGINE Bus EXITED
+[01/Dec/2022:12:05:11] ENGINE Listening for SIGTERM.
+[01/Dec/2022:12:05:11] ENGINE Listening for SIGHUP.
+[01/Dec/2022:12:05:11] ENGINE Listening for SIGUSR1.
+[01/Dec/2022:12:05:11] ENGINE Bus STARTING
+[01/Dec/2022:12:05:11] ENGINE Started monitor thread 'Autoreloader'.
+[01/Dec/2022:12:05:11] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7f66eb3167a0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 122, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 70, in assert_free
+    info = socket.getaddrinfo(host, port, socket.AF_UNSPEC, socket.SOCK_STREAM)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+[01/Dec/2022:12:05:11] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: gaierror(-2, 'Name or service not known')
+
+[01/Dec/2022:12:05:11] ENGINE Bus STOPPING
+[01/Dec/2022:12:05:11] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('www.brainboost-limited.com', 443)) already shut down
+[01/Dec/2022:12:05:11] ENGINE Stopped thread 'Autoreloader'.
+[01/Dec/2022:12:05:11] ENGINE Bus STOPPED
+[01/Dec/2022:12:05:11] ENGINE Bus EXITING
+[01/Dec/2022:12:05:11] ENGINE Bus EXITED
+[01/Dec/2022:12:05:44] ENGINE Listening for SIGTERM.
+[01/Dec/2022:12:05:44] ENGINE Listening for SIGHUP.
+[01/Dec/2022:12:05:44] ENGINE Listening for SIGUSR1.
+[01/Dec/2022:12:05:44] ENGINE Bus STARTING
+[01/Dec/2022:12:05:44] ENGINE Started monitor thread 'Autoreloader'.
+[01/Dec/2022:12:05:44] ENGINE Serving on https://0.0.0.0
+[01/Dec/2022:12:05:44] ENGINE Bus STARTED
+[01/Dec/2022:12:05:44] ENGINE Error in HTTPServer.serve
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cheroot/server.py", line 1807, in serve
+    self._connections.run(self.expiration_interval)
+  File "/usr/local/lib/python3.10/dist-packages/cheroot/connections.py", line 198, in run
+    self._run(expiration_interval)
+  File "/usr/local/lib/python3.10/dist-packages/cheroot/connections.py", line 241, in _run
+    new_conn = self._from_server_socket(self.server.socket)
+  File "/usr/local/lib/python3.10/dist-packages/cheroot/connections.py", line 295, in _from_server_socket
+    s, ssl_env = self.server.ssl_adapter.wrap(s)
+  File "/usr/local/lib/python3.10/dist-packages/cheroot/ssl/builtin.py", line 270, in wrap
+    s = self.context.wrap_socket(
+  File "/usr/lib/python3.10/ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/usr/lib/python3.10/ssl.py", line 1071, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.10/ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLZeroReturnError: TLS/SSL connection has been closed (EOF) (_ssl.c:997)
+
+[01/Dec/2022:12:05:56] ENGINE Keyboard Interrupt: shutting down bus
+[01/Dec/2022:12:05:56] ENGINE Bus STOPPING
+[01/Dec/2022:12:05:56] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 443)) shut down
+[01/Dec/2022:12:05:56] ENGINE Stopped thread 'Autoreloader'.
+[01/Dec/2022:12:05:56] ENGINE Bus STOPPED
+[01/Dec/2022:12:05:56] ENGINE Bus EXITING
+[01/Dec/2022:12:05:56] ENGINE Bus EXITED
+[01/Dec/2022:12:05:56] ENGINE Waiting for child threads to terminate...
+[01/Dec/2022:12:06:00] ENGINE Listening for SIGTERM.
+[01/Dec/2022:12:06:00] ENGINE Listening for SIGHUP.
+[01/Dec/2022:12:06:00] ENGINE Listening for SIGUSR1.
+[01/Dec/2022:12:06:00] ENGINE Bus STARTING
+[01/Dec/2022:12:06:00] ENGINE Started monitor thread 'Autoreloader'.
+[01/Dec/2022:12:06:00] ENGINE Serving on https://0.0.0.0
+[01/Dec/2022:12:06:00] ENGINE Bus STARTED
+[01/Dec/2022:12:06:00] ENGINE Error in HTTPServer.serve
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cheroot/server.py", line 1807, in serve
+    self._connections.run(self.expiration_interval)
+  File "/usr/local/lib/python3.10/dist-packages/cheroot/connections.py", line 198, in run
+    self._run(expiration_interval)
+  File "/usr/local/lib/python3.10/dist-packages/cheroot/connections.py", line 241, in _run
+    new_conn = self._from_server_socket(self.server.socket)
+  File "/usr/local/lib/python3.10/dist-packages/cheroot/connections.py", line 295, in _from_server_socket
+    s, ssl_env = self.server.ssl_adapter.wrap(s)
+  File "/usr/local/lib/python3.10/dist-packages/cheroot/ssl/builtin.py", line 270, in wrap
+    s = self.context.wrap_socket(
+  File "/usr/lib/python3.10/ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/usr/lib/python3.10/ssl.py", line 1071, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.10/ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLZeroReturnError: TLS/SSL connection has been closed (EOF) (_ssl.c:997)
+
+[01/Dec/2022:12:06:45] ENGINE Keyboard Interrupt: shutting down bus
+[01/Dec/2022:12:06:45] ENGINE Bus STOPPING
+[01/Dec/2022:12:06:46] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 443)) shut down
+[01/Dec/2022:12:06:46] ENGINE Stopped thread 'Autoreloader'.
+[01/Dec/2022:12:06:46] ENGINE Bus STOPPED
+[01/Dec/2022:12:06:46] ENGINE Bus EXITING
+[01/Dec/2022:12:06:46] ENGINE Bus EXITED
+[01/Dec/2022:12:06:46] ENGINE Waiting for child threads to terminate...
+[01/Dec/2022:12:07:24] ENGINE Listening for SIGTERM.
+[01/Dec/2022:12:07:24] ENGINE Listening for SIGHUP.
+[01/Dec/2022:12:07:24] ENGINE Listening for SIGUSR1.
+[01/Dec/2022:12:07:24] ENGINE Bus STARTING
+[01/Dec/2022:12:07:24] ENGINE Started monitor thread 'Autoreloader'.
+[01/Dec/2022:12:07:24] ENGINE Serving on https://0.0.0.0
+[01/Dec/2022:12:07:24] ENGINE Bus STARTED
+[01/Dec/2022:12:07:24] ENGINE Error in HTTPServer.serve
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cheroot/server.py", line 1807, in serve
+    self._connections.run(self.expiration_interval)
+  File "/usr/local/lib/python3.10/dist-packages/cheroot/connections.py", line 198, in run
+    self._run(expiration_interval)
+  File "/usr/local/lib/python3.10/dist-packages/cheroot/connections.py", line 241, in _run
+    new_conn = self._from_server_socket(self.server.socket)
+  File "/usr/local/lib/python3.10/dist-packages/cheroot/connections.py", line 295, in _from_server_socket
+    s, ssl_env = self.server.ssl_adapter.wrap(s)
+  File "/usr/local/lib/python3.10/dist-packages/cheroot/ssl/builtin.py", line 270, in wrap
+    s = self.context.wrap_socket(
+  File "/usr/lib/python3.10/ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/usr/lib/python3.10/ssl.py", line 1071, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.10/ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLZeroReturnError: TLS/SSL connection has been closed (EOF) (_ssl.c:997)
+
+[01/Dec/2022:12:07:45] ENGINE Restarting because cherrypy.cfg changed.
+[01/Dec/2022:12:07:45] ENGINE Stopped thread 'Autoreloader'.
+[01/Dec/2022:12:07:45] ENGINE Bus STOPPING
+[01/Dec/2022:12:07:45] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 443)) shut down
+[01/Dec/2022:12:07:45] ENGINE Bus STOPPED
+[01/Dec/2022:12:07:45] ENGINE Bus EXITING
+[01/Dec/2022:12:07:45] ENGINE Bus EXITED
+[01/Dec/2022:12:07:45] ENGINE Waiting for child threads to terminate...
+[01/Dec/2022:12:07:45] ENGINE Re-spawning python3 server.py
+[01/Dec/2022:12:07:47] ENGINE Listening for SIGTERM.
+[01/Dec/2022:12:07:47] ENGINE Listening for SIGHUP.
+[01/Dec/2022:12:07:47] ENGINE Listening for SIGUSR1.
+[01/Dec/2022:12:07:47] ENGINE Bus STARTING
+[01/Dec/2022:12:07:47] ENGINE Started monitor thread 'Autoreloader'.
+[01/Dec/2022:12:07:47] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7f3ea13731c0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 122, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 70, in assert_free
+    info = socket.getaddrinfo(host, port, socket.AF_UNSPEC, socket.SOCK_STREAM)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+[01/Dec/2022:12:07:47] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: gaierror(-2, 'Name or service not known')
+
+[01/Dec/2022:12:07:47] ENGINE Bus STOPPING
+[01/Dec/2022:12:07:47] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('www.brainboost-limited.com', 443)) already shut down
+[01/Dec/2022:12:07:47] ENGINE Stopped thread 'Autoreloader'.
+[01/Dec/2022:12:07:47] ENGINE Bus STOPPED
+[01/Dec/2022:12:07:47] ENGINE Bus EXITING
+[01/Dec/2022:12:07:47] ENGINE Bus EXITED
+[01/Dec/2022:12:21:08] ENGINE Listening for SIGTERM.
+[01/Dec/2022:12:21:08] ENGINE Listening for SIGHUP.
+[01/Dec/2022:12:21:08] ENGINE Listening for SIGUSR1.
+[01/Dec/2022:12:21:08] ENGINE Bus STARTING
+[01/Dec/2022:12:21:08] ENGINE Started monitor thread 'Autoreloader'.
+[01/Dec/2022:12:21:08] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x7fd13a91e1d0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 230, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/_cpserver.py", line 180, in start
+    super(Server, self).start()
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 122, in free
+    Checker(timeout=0.1).assert_free(host, port)
+  File "/usr/local/lib/python3.10/dist-packages/portend.py", line 70, in assert_free
+    info = socket.getaddrinfo(host, port, socket.AF_UNSPEC, socket.SOCK_STREAM)
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+[01/Dec/2022:12:21:08] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 268, in start
+    self.publish('start')
+  File "/usr/local/lib/python3.10/dist-packages/cherrypy/process/wspbus.py", line 248, in publish
+    raise exc
+cherrypy.process.wspbus.ChannelFailures: gaierror(-2, 'Name or service not known')
+
+[01/Dec/2022:12:21:08] ENGINE Bus STOPPING
+[01/Dec/2022:12:21:08] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('www.brainboost-limited.com', 443)) already shut down
+[01/Dec/2022:12:21:08] ENGINE Stopped thread 'Autoreloader'.
+[01/Dec/2022:12:21:08] ENGINE Bus STOPPED
+[01/Dec/2022:12:21:08] ENGINE Bus EXITING
+[01/Dec/2022:12:21:08] ENGINE Bus EXITED
